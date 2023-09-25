@@ -1,0 +1,46 @@
+<div class="container">
+  <h2>Customer Details</h2>
+  <form #formdata="ngForm">
+    <div class="form-group">
+      <label for="customerID">Customer ID</label>
+      <input type="text" class="form-control" id="customerID" #customerID="ngModel" ngModel 
+      name="customerID" >
+    </div>
+    <div class="form-group">
+      <label for="customerName">Customer Name</label>
+      <input type="text" class="form-control" id="customerName" #customerName="ngModel" ngModel 
+      name="customerName">
+    </div>
+    <div class="form-group">
+      <label for="customerEmail">Customer Email</label>
+      <input type="email" class="form-control" id="customerEmail" #customerEmail="ngModel" ngModel 
+      name="customerEmail" >
+    </div>
+    <div class="form-group">
+      <label for="customerContact">Customer Contact</label>
+      <input type="text" class="form-control" id="customerContact" #customerContact="ngModel" ngModel 
+      name="customerContact"  >
+    </div>
+    <div class="form-group">
+      <label for="billID">Bill ID</label>
+      <input type="text" class="form-control" id="billID" #billID="ngModel" ngModel 
+      name="billID" >
+    </div>
+    <div class="form-group">
+      <label for="unitConsumption">Unit Consumption</label>
+      <input type="text" class="form-control" id="unitConsumption" #unitConsumption="ngModel" ngModel 
+      name="unitConsumption"  >
+    </div>
+    <div class="form-group">
+      <label for="billDueDate">Bill Due Date</label>
+      <input type="text" class="form-control" id="billDueDate" #billDueDate="ngModel" ngModel 
+      name="billDueDate" >
+    </div>
+    <div class="form-group">
+      <label for="billDuration">Bill Duration</label>
+      <input type="text" class="form-control" id="billDuration" #billDuration="ngModel" ngModel 
+      name="billDuration"  >
+    </div>
+  </form>
+  <button (click)="getinfo(formdata)">submit</button>
+</div>

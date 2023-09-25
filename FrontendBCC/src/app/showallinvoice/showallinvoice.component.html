@@ -1,0 +1,33 @@
+
+<div class ="container">
+    <div class = "card">
+        <h3 class="text-center"> All Invoice List</h3>
+        <div class = "card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th> CustomerId</th>
+                    <th> Customer Name</th>
+                    <th> Bill ID</th>
+                    <th> Unit Consumption </th>
+                    <th> Bill Due Date</th>
+                    <th> Bill Duration </th>
+                    <th> Amount Due </th>
+                    <th> Total Amount </th>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let in of invoice">
+                        <td> {{ in.customer.customerID}}</td>
+                        <td> {{ in.customer.customerName}}</td>
+                        <td> {{ in.customer.billID}}</td>
+                        <td> {{ in.customer.unitConsumption}}</td>
+                        <td> {{ in.customer.billDueDate}}</td>
+                        <td> {{ in.customer.billDuration}}</td>
+                        <td> {{ in.amountDue}}</td>
+                        <td> {{ in.totalAmount}}</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

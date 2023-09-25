@@ -1,0 +1,30 @@
+
+<div class ="container">
+    <div class = "card">
+        <h3 class="text-center"> All Transaction List</h3>
+        <div class = "card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th> CustomerId</th>
+                    <th> Customer Name</th>
+                    <th> Transaction ID</th>
+                    <th> Transaction Date</th>
+                    <th> Amount </th>
+                    <th> Payment Method </th>
+                    <th> Payment Status </th>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let tr of transaction">
+                        <td> {{ tr.customer.customerID}}</td>
+                        <td> {{ tr.customer.customerName}}</td>
+                        <td> {{ tr.id}}</td>
+                        <td> {{ tr.date}}</td>
+                        <td> {{ tr.amount}}</td>
+                        <td> {{ tr.paymentMethod}}</td>
+                        <td> {{ tr.paymentStatus}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
